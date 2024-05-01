@@ -1,13 +1,13 @@
 {
   "name": "angular-ngrx-demo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate": "openapi-generator-cli generate -i schema/model.yaml -g typescript-angular -o shared-model/src/"
+    "generate": "npx @openapitools/openapi-generator-cli generate -g typescript-angular -i src/schema/model.yaml -o src/shared-model/src/"
   },
   "private": true,
   "dependencies": {
