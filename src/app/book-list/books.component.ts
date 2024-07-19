@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { GoogleBooksService } from './books.service';
 import { Store } from '@ngrx/store';
 import { Router } from '@angular/router';
@@ -12,11 +12,10 @@ import { BooksActions, BooksApiActions } from './state/books.actions';
 })
 export class BooksComponent {
   title = 'angular-ngrx-demo';
-  constructor(
-    private booksService: GoogleBooksService,
-    private store: Store,
-    private router: Router
-  ) {}
+  private booksService: GoogleBooksService = inject(GoogleBooksService);
+  private store: Store = inject(Store);
+  private router: Router = inject(Router);
+  constructor() {}
 
   books$ = this.store.select(selectBooks);
   bookCollection$ = this.store.select(selectBookCollection);
