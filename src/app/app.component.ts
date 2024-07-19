@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   `,
 })
 export class AppComponent {
-  title = 'angular-ngrx-demo';
+  title = 'learning-angular';
   constructor(private router: Router) {}
 
   performAction(action: string) {

@@ -11,7 +11,7 @@ import { BooksActions, BooksApiActions } from './state/books.actions';
   styleUrls: ['./books.component.scss'],
 })
 export class BooksComponent {
-  title = 'angular-ngrx-demo';
+  title = 'learning-angular';
   private booksService: GoogleBooksService = inject(GoogleBooksService);
   private store: Store = inject(Store);
   private router: Router = inject(Router);
