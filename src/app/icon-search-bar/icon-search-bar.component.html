@@ -1,0 +1,13 @@
+<div class="search-bar-container">
+  <mat-form-field [@openClose]="hide ? 'closed' : 'open'">
+    <mat-label>Search</mat-label>
+    <input matInput placeholder="Search" value="" />
+  </mat-form-field>
+  <button class="spacer" mat-icon-button (click)="toggle()">
+    @if (!hide) {
+    <mat-icon>close</mat-icon>
+    } @else {
+    <mat-icon>search</mat-icon>
+    }
+  </button>
+</div>

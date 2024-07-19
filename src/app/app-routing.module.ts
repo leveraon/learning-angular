@@ -4,25 +4,39 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./demo-home-page/demo-home-page.module').then(m => m.DemoHomePageModule),
-
+    loadChildren: () =>
+      import('./demo-home-page/demo-home-page.module').then(
+        (m) => m.DemoHomePageModule
+      ),
   },
   {
     path: 'drag',
-    loadChildren: () => import('./drag-drop/drag-drop.module').then(m => m.DragDropModule)
+    loadChildren: () =>
+      import('./drag-drop/drag-drop.module').then((m) => m.DragDropModule),
   },
   {
     path: 'expand-panel',
-    loadChildren: () => import('./expand-panel/expand-panel.module').then(m => m.ExpandPanelModule)
+    loadChildren: () =>
+      import('./expand-panel/expand-panel.module').then(
+        (m) => m.ExpandPanelModule
+      ),
   },
   {
     path: 'book-list',
-    loadChildren: () => import('./book-list/books.module').then(m => m.BooksModule)
-  }
+    loadChildren: () =>
+      import('./book-list/books.module').then((m) => m.BooksModule),
+  },
+  {
+    path: 'search-bar',
+    loadComponent: () =>
+      import('./icon-search-bar/icon-search-bar.component').then(
+        (m) => m.IconSearchBarComponent
+      ),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
