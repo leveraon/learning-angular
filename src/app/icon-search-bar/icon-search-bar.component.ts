@@ -1,18 +1,16 @@
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
 
 @Component({
   selector: 'app-icon-search-bar',
@@ -49,10 +47,6 @@ import {
 })
 export class IconSearchBarComponent {
   hide: boolean = true;
-
-  buttonClicked() {
-    this.hide = false;
-  }
 
   toggle() {
     this.hide = !this.hide;
