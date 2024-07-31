@@ -1,15 +1,26 @@
-@for (book of books; track $index) {
-<div class="book-item">
-  <p>{{ book.volumeInfo.title }}</p>
-  <span> by {{ book.volumeInfo.authors }}</span>
-  <button
-    mat-raised-button
-    color="secondary"
-    class="spacer"
-    (click)="remove.emit(book.id)"
-    data-test="remove-button"
-  >
-    Remove from Collection
-  </button>
-</div>
-}
+<table>
+  <thead>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    @for (book of books; track $index) {
+    <tr>
+      <td>{{ book.volumeInfo.title }}</td>
+      <td>by {{ book.volumeInfo.authors }}</td>
+      <td>
+        <button
+          mat-raised-button
+          color="secondary"
+          class="spacer"
+          (click)="remove.emit(book.id)"
+          data-test="remove-button"
+        >
+          Remove from Collection
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

@@ -14,6 +14,8 @@ import { booksReducer } from './state/books.reducer';
 import { collectionReducer } from './state/collection.reducer';
 import { BooksComponent } from './books.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [BooksComponent, BookListComponent, BookCollectionComponent],
@@ -21,6 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatButtonModule,
     MatIconModule,
+    MatListModule,
+    MatTableModule,
     BooksRoutingModule,
     StoreModule.forRoot({
       books: booksReducer,

@@ -1,0 +1,36 @@
+table {
+  border: 1px solid black;
+  width: 100%;
+  thead {
+    th {
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      &:last-child {
+        border-right: none;
+      }
+      background-color: azure;
+      height: 3rem;
+    }
+  }
+  tbody {
+    tr {
+      td {
+        width: 33.33%;
+        border-right: 1px solid black;
+        border-bottom: 1px dotted black;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      &:hover {
+        background-color: lightgray;
+      }
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  text-align: center;
+}
