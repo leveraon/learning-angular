@@ -33,6 +33,13 @@ const routes: Routes = [
         (m) => m.IconSearchBarComponent
       ),
   },
+  {
+    path: 'plot-chart',
+    loadComponent: () =>
+      import('./plot-chart/plot-chart.component').then(
+        (m) => m.PlotChartComponent
+      ),
+  },
 ];
 
 @NgModule({
