@@ -124,7 +124,7 @@ export class PlotChartComponent implements OnInit {
             width: 975,
             projection: 'identity',
             marks: [
-              Plot.geo(nationData, { fill: '#eee' }),
+              Plot.geo(nationData, { fill: '#bbb' }),
               Plot.geo(statemeshData, { stroke: 'white' }),
             ],
           });
