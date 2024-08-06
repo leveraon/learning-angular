@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import * as Plot from '@observablehq/plot';
+import { html } from 'd3';
 
 export const SELECTION = ['marks', 'bar', 'penguins'];
 
@@ -36,9 +37,23 @@ export class PlotChartComponent implements OnInit {
       case 'marks':
         this.div.firstChild?.remove();
         fetch('assets/data/aapl.json').then(async (response) => {
+          const aapl = await response.json();
           this.data = Plot.plot({
+            width: 1200,
+            inset: 6,
+            y: { grid: true, label: 'Stock price ($)' },
+            color: { type: 'threshold', range: ['red', 'green'] },
             marks: [
-              Plot.lineY(await response.json(), { x: 'Date', y: 'Close' }),
+              Plot.ruleX(aapl, { x: 'Date', y1: 'Low', y2: 'High' }),
+              Plot.ruleX(aapl, {
+                x: 'Date',
+                y1: 'Open',
+                y2: 'Close',
+                stroke: (d) => d.Close - d.Open,
+                strokeWidth: 4,
+              }),
+              Plot.lineY(aapl, { x: 'Date', y: 'Close' }),
+              Plot.tip(aapl, Plot.pointerX({ x: 'Date', y: 'Close' })),
             ],
           });
           this.div.append(this.data);
@@ -48,10 +63,27 @@ export class PlotChartComponent implements OnInit {
       case 'bar':
         this.div.firstChild?.remove();
         fetch('assets/data/alphabet.json').then(async (response) => {
-          this.data = Plot.barY(await response.json(), {
-            x: 'letter',
-            y: 'frequency',
-          }).plot();
+          const alphabet = await response.json();
+          this.data = Plot.plot({
+            width: 1500,
+            label: null,
+            y: {
+              grid: true,
+              label: 'Frequency (%)',
+              percent: true,
+            },
+            marks: [
+              Plot.barY(alphabet, { x: 'letter', y: 'frequency' }),
+              Plot.text(alphabet, {
+                x: 'letter',
+                y: 'frequency',
+                text: (d) => (d.frequency * 100).toFixed(1),
+                dy: -6,
+                lineAnchor: 'bottom',
+              }),
+              Plot.ruleY([0]),
+            ],
+          });
           this.div.append(this.data);
         });
 
@@ -59,6 +91,7 @@ export class PlotChartComponent implements OnInit {
       case 'penguins':
         this.div.firstChild?.remove();
         fetch('assets/data/penguins.json').then(async (response) => {
+          const penguins = await response.json();
           this.data = Plot.plot({
             marginLeft: 60,
             marginRight: 60,
@@ -66,7 +99,7 @@ export class PlotChartComponent implements OnInit {
             x: { label: 'Frequency' },
             y: { padding: 0 },
             marks: [
-              Plot.barX(await response.json(), {
+              Plot.barX(penguins, {
                 fy: 'island',
                 y: 'sex',
                 x: 1,
