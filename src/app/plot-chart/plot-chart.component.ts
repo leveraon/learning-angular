@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import * as Plot from '@observablehq/plot';
 
-export const SELECTION = ['marks', 'bar', 'penguins', 'nation'];
+export const SELECTION = ['marks', 'bar', 'penguins', 'nation', 'country'];
 
 @Component({
   selector: 'app-plot-chart',
@@ -126,6 +126,41 @@ export class PlotChartComponent implements OnInit {
             marks: [
               Plot.geo(nationData, { fill: '#bbb' }),
               Plot.geo(statemeshData, { stroke: 'white' }),
+            ],
+          });
+          this.div.append(this.data);
+        });
+        break;
+
+      case 'country':
+        this.div.firstChild?.remove();
+        Promise.all([
+          fetch('assets/data/countries.json'),
+          fetch('assets/data/hale.json'),
+          fetch('assets/data/countrymesh.json'),
+        ]).then(async ([countries, hale, countrymesh]) => {
+          const countriesData = await countries.json();
+          const haleData = await hale.json();
+          const countrymeshData = await countrymesh.json();
+          this.data = Plot.plot({
+            projection: 'equal-earth',
+            width: 928,
+            height: 928 / 2,
+            color: {
+              scheme: 'YlGnBu',
+              unknown: '#ccc',
+              label: 'Healthy life expectancy (years)',
+              legend: true,
+            },
+            marks: [
+              Plot.sphere({ fill: 'white', stroke: 'currentColor' }),
+              Plot.geo(countriesData, {
+                fill: (
+                  (map) => (d) =>
+                    map.get(d.properties.name)
+                )(new Map(haleData.map((d: any) => [d.name, d.hale]))),
+              }),
+              Plot.geo(countrymeshData, { stroke: 'white' }),
             ],
           });
           this.div.append(this.data);
