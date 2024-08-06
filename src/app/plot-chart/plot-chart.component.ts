@@ -5,9 +5,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import * as Plot from '@observablehq/plot';
-import { html } from 'd3';
 
-export const SELECTION = ['marks', 'bar', 'penguins'];
+export const SELECTION = ['marks', 'bar', 'penguins', 'nation'];
 
 @Component({
   selector: 'app-plot-chart',
@@ -111,6 +110,26 @@ export class PlotChartComponent implements OnInit {
           this.div.append(this.data);
         });
 
+        break;
+
+      case 'nation':
+        this.div.firstChild?.remove();
+        Promise.all([
+          fetch('assets/data/nation.json'),
+          fetch('assets/data/statemesh.json'),
+        ]).then(async ([nation, statemesh]) => {
+          const nationData = await nation.json();
+          const statemeshData = await statemesh.json();
+          this.data = Plot.plot({
+            width: 975,
+            projection: 'identity',
+            marks: [
+              Plot.geo(nationData, { fill: '#eee' }),
+              Plot.geo(statemeshData, { stroke: 'white' }),
+            ],
+          });
+          this.div.append(this.data);
+        });
         break;
 
       default:
