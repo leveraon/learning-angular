@@ -43,7 +43,7 @@ export class SharedUiComponent implements OnInit {
         path: 'plot-chart',
       },
       {
-        title: 'Checkbox Tree (CDK)',
+        title: 'Checkbox Tree (CDK/Material)',
         path: 'checkbox-tree',
       },
     ];

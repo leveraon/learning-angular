@@ -6,15 +6,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-import {
-  MatTreeFlatDataSource,
-  MatTreeFlattener,
-  MatTreeModule,
-} from '@angular/material/tree';
+import { MatInputModule } from '@angular/material/input';
+import { MatTreeFlatDataSource, MatTreeModule } from '@angular/material/tree';
 import { ChcklistDatabaseService } from './checklist-database.service';
 import { TREE_DATA } from './mock-data';
 import { TodoItemFlatNode, TodoItemNode } from './models';
-import { MatInputModule } from '@angular/material/input';
+import { TreeFlattenerService } from './tree-flattener.service';
 
 export interface TreeNode {
   name: string;
@@ -37,23 +34,12 @@ export interface TreeNode {
   ],
   templateUrl: './checkbox-tree-with-filter.component.html',
   styleUrl: './checkbox-tree-with-filter.component.scss',
-  providers: [ChcklistDatabaseService],
+  providers: [ChcklistDatabaseService, TreeFlattenerService],
 })
 export class CheckboxTreeWithFilterComponent {
-  /** Map from flat node to nested node. This helps us finding the nested node to be modified */
-  flatNodeMap = new Map<TodoItemFlatNode, TodoItemNode>();
-
   searchString = '';
 
-  /** Map from nested node to flattened node. This helps us to keep the same object for selection */
-  nestedNodeMap = new Map<TodoItemNode, TodoItemFlatNode>();
-
-  /** A selected parent node to be inserted */
-  selectedParent: TodoItemFlatNode | null = null;
-
   treeControl: FlatTreeControl<TodoItemFlatNode>;
-
-  treeFlattener: MatTreeFlattener<TodoItemNode, TodoItemFlatNode>;
 
   dataSource: MatTreeFlatDataSource<TodoItemNode, TodoItemFlatNode>;
 
@@ -62,20 +48,22 @@ export class CheckboxTreeWithFilterComponent {
     true /* multiple */
   );
 
-  constructor(private _database: ChcklistDatabaseService) {
-    this.treeFlattener = new MatTreeFlattener(
-      this.transformer,
-      this.getLevel,
-      this.isExpandable,
-      this.getChildren
-    );
+  hasChild = (_: number, _nodeData: TodoItemFlatNode) => _nodeData.expandable;
+
+  hasNoContent = (_: number, _nodeData: TodoItemFlatNode) =>
+    _nodeData.item === '';
+
+  constructor(
+    private _database: ChcklistDatabaseService,
+    private _treeFlattener: TreeFlattenerService
+  ) {
     this.treeControl = new FlatTreeControl<TodoItemFlatNode>(
-      this.getLevel,
-      this.isExpandable
+      _treeFlattener.getLevel,
+      _treeFlattener.isExpandable
     );
     this.dataSource = new MatTreeFlatDataSource(
       this.treeControl,
-      this.treeFlattener
+      _treeFlattener.treeFlattener()
     );
     this._database.initialize(TREE_DATA);
 
@@ -85,34 +73,6 @@ export class CheckboxTreeWithFilterComponent {
       this.treeControl.expand(this.treeControl.dataNodes[0]);
     });
   }
-
-  getLevel = (node: TodoItemFlatNode) => node.level;
-
-  isExpandable = (node: TodoItemFlatNode) => node.expandable;
-
-  getChildren = (node: TodoItemNode): TodoItemNode[] => node.children!;
-
-  hasChild = (_: number, _nodeData: TodoItemFlatNode) => _nodeData.expandable;
-
-  hasNoContent = (_: number, _nodeData: TodoItemFlatNode) =>
-    _nodeData.item === '';
-
-  /**
-   * Transformer to convert nested node to flat node. Record the nodes in maps for later use.
-   */
-  transformer = (node: TodoItemNode, level: number) => {
-    const existingNode = this.nestedNodeMap.get(node);
-    const flatNode =
-      existingNode && existingNode.item === node.item
-        ? existingNode
-        : ({} as TodoItemFlatNode);
-    flatNode.item = node.item;
-    flatNode.level = level;
-    flatNode.expandable = !!node.children?.length;
-    this.flatNodeMap.set(flatNode, node);
-    this.nestedNodeMap.set(node, flatNode);
-    return flatNode;
-  };
 
   // search filter logic start
   filterLeafNode(node: TodoItemFlatNode): boolean {
@@ -169,7 +129,7 @@ export class CheckboxTreeWithFilterComponent {
   }
 
   /** Toggle the to-do item selection. Select/deselect all the descendants node */
-  todoItemSelectionToggle(node: TodoItemFlatNode): void {
+  descendantsItemSelectionToggle(node: TodoItemFlatNode): void {
     this.checklistSelection.toggle(node);
     const descendants = this.treeControl.getDescendants(node);
     this.checklistSelection.isSelected(node)
@@ -182,7 +142,7 @@ export class CheckboxTreeWithFilterComponent {
   }
 
   /** Toggle a leaf to-do item selection. Check all the parents to see if they changed */
-  todoLeafItemSelectionToggle(node: TodoItemFlatNode): void {
+  leafItemSelectionToggle(node: TodoItemFlatNode): void {
     this.checklistSelection.toggle(node);
     this.checkAllParentsSelection(node);
   }
@@ -214,7 +174,7 @@ export class CheckboxTreeWithFilterComponent {
 
   /* Get the parent node of a node */
   getParentNode(node: TodoItemFlatNode): TodoItemFlatNode | null {
-    const currentLevel = this.getLevel(node);
+    const currentLevel = this._treeFlattener.getLevel(node);
 
     if (currentLevel < 1) {
       return null;
@@ -225,7 +185,7 @@ export class CheckboxTreeWithFilterComponent {
     for (let i = startIndex; i >= 0; i--) {
       const currentNode = this.treeControl.dataNodes[i];
 
-      if (this.getLevel(currentNode) < currentLevel) {
+      if (this._treeFlattener.getLevel(currentNode) < currentLevel) {
         return currentNode;
       }
     }
