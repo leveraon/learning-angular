@@ -40,6 +40,13 @@ const routes: Routes = [
         (m) => m.PlotChartComponent
       ),
   },
+  {
+    path: 'checkbox-tree',
+    loadComponent: () =>
+      import(
+        './checkbox-tree-with-filter/checkbox-tree-with-filter.component'
+      ).then((m) => m.CheckboxTreeWithFilterComponent),
+  },
 ];
 
 @NgModule({

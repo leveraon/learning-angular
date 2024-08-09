@@ -1,35 +1,10 @@
 <mat-grid-list cols="12" rowHeight="2:1">
+  @for( feature of features; track feature.path) {
   <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction('drag')">
-      Drag & Drop (CDK)
+    <button mat-button color="primary" (click)="performAction(feature.path)">
+      {{ feature.title }}
     </button>
   </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction('expand-panel')">
-      Expand Panel (Materials)
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction('book-list')">
-      Book List (NgRX)
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction('search-bar')">
-      Search Bar (Animations)
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction('plot-chart')">
-      Plot (ObserbaleHQ)
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>6</mat-grid-tile>
-  <mat-grid-tile>7</mat-grid-tile>
-  <mat-grid-tile>8</mat-grid-tile>
-  <mat-grid-tile>9</mat-grid-tile>
-  <mat-grid-tile>10</mat-grid-tile>
-  <mat-grid-tile>11</mat-grid-tile>
-  <mat-grid-tile>12</mat-grid-tile>
+  }
 </mat-grid-list>
 <ng-content></ng-content>
