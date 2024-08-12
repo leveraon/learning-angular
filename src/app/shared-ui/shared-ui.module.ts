@@ -3,19 +3,20 @@ import { CommonModule } from '@angular/common';
 import { SharedUiComponent } from './shared-ui.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [
-    SharedUiComponent
-  ],
+  declarations: [SharedUiComponent],
   imports: [
     CommonModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatSidenavModule,
+    MatIconModule,
   ],
-  exports: [
-    SharedUiComponent
-  ]
+  exports: [SharedUiComponent],
 })
-export class SharedUiModule { }
+export class SharedUiModule {}

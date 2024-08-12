@@ -1,10 +1,22 @@
-<mat-grid-list [cols]="features.length" rowHeight="4:1">
-  @for( feature of features; track feature.path) {
-  <mat-grid-tile>
-    <button mat-button color="primary" (click)="performAction(feature.path)">
-      {{ feature.title }}
-    </button>
-  </mat-grid-tile>
-  }
-</mat-grid-list>
-<ng-content></ng-content>
+<mat-drawer-container class="side-container">
+  <mat-drawer mode="side" opened>
+    <mat-list>
+      <div mat-subheader>Angular Examples</div>
+      @for( feature of features; track feature.path) {
+      <mat-list-item>
+        <mat-icon matListItemIcon>fiber_manual_record</mat-icon>
+        <div matListItemTitle>
+          <button
+            mat-button
+            color="primary"
+            (click)="performAction(feature.path)"
+          >
+            {{ feature.title }}
+          </button>
+        </div>
+      </mat-list-item>
+      }
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content><ng-content></ng-content></mat-drawer-content>
+</mat-drawer-container>
