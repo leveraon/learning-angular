@@ -1,4 +1,4 @@
-<mat-grid-list cols="12" rowHeight="2:1">
+<mat-grid-list [cols]="features.length" rowHeight="4:1">
   @for( feature of features; track feature.path) {
   <mat-grid-tile>
     <button mat-button color="primary" (click)="performAction(feature.path)">

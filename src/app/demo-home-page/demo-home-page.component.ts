@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-demo-home-page',
@@ -8,15 +7,4 @@ import { Router } from '@angular/router';
 })
 export class DemoHomePageComponent {
 
-
-  constructor(
-    private router: Router,
-  ) {
-
-  }
-
-
-  performAction(action: string) {
-    this.router.navigate(['drag']);
-  }
 }
