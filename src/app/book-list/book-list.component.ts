@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges
+} from '@angular/core';
 import { Book } from './books.model';
 
 @Component({
@@ -6,10 +13,14 @@ import { Book } from './books.model';
   templateUrl: './book-list.component.html',
   styleUrls: ['./book-list.component.scss'],
 })
-export class BookListComponent {
+export class BookListComponent implements OnChanges {
   @Input() books: ReadonlyArray<Book> = [];
   @Output() add = new EventEmitter<string>();
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['title', 'author', 'action'];
   dataSource!: ReadonlyArray<Book>;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.dataSource = changes['books'].currentValue;
+  }
 }

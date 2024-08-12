@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import { Book } from '../book-list/books.model';
 
 @Component({
@@ -9,4 +15,11 @@ import { Book } from '../book-list/books.model';
 export class BookCollectionComponent {
   @Input() books: ReadonlyArray<Book> = [];
   @Output() remove = new EventEmitter<string>();
+
+  displayedColumns: string[] = ['title', 'author', 'action'];
+  dataSource!: ReadonlyArray<Book>;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.dataSource = changes['books'].currentValue;
+  }
 }
