@@ -21,7 +21,6 @@ import { INITIAL_EVENTS, createEventId } from './event-utils';
   styleUrl: './calendar.component.scss',
 })
 export class CalendarComponent {
-  calendarVisible = signal(true);
   calendarOptions = signal<CalendarOptions>({
     plugins: [interactionPlugin, dayGridPlugin, timeGridPlugin, listPlugin],
     headerToolbar: {
@@ -36,6 +35,7 @@ export class CalendarComponent {
     selectable: true,
     selectMirror: true,
     dayMaxEvents: true,
+    handleWindowResize: true,
     select: this.handleDateSelect.bind(this),
     eventClick: this.handleEventClick.bind(this),
     eventsSet: this.handleEvents.bind(this),
@@ -48,17 +48,6 @@ export class CalendarComponent {
   currentEvents = signal<EventApi[]>([]);
 
   constructor(private changeDetector: ChangeDetectorRef) {}
-
-  handleCalendarToggle() {
-    this.calendarVisible.update((bool) => !bool);
-  }
-
-  handleWeekendsToggle() {
-    this.calendarOptions.update((options) => ({
-      ...options,
-      weekends: !options.weekends,
-    }));
-  }
 
   handleDateSelect(selectInfo: DateSelectArg) {
     const title = prompt('Please enter a new title for your event');
