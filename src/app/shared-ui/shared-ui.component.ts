@@ -46,6 +46,10 @@ export class SharedUiComponent implements OnInit {
         title: 'Checkbox Tree (CDK/Material)',
         path: 'checkbox-tree',
       },
+      {
+        title: 'Calendar',
+        path: 'calendar',
+      },
     ];
   }
 

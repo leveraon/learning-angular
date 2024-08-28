@@ -1,5 +1,5 @@
 <mat-drawer-container class="side-container">
-  <mat-drawer mode="side" opened>
+  <mat-drawer #drawer mode="side">
     <mat-list>
       <div mat-subheader><h2>Angular Examples</h2></div>
       @for( feature of features; track feature.path) {
@@ -18,5 +18,17 @@
       }
     </mat-list>
   </mat-drawer>
-  <mat-drawer-content><ng-content></ng-content></mat-drawer-content>
+
+  <mat-drawer-content>
+    <div class="sidenav-toggle">
+      <button mat-mini-fab (click)="drawer.toggle()">
+        @if (drawer.opened) {
+        <mat-icon>arrow_right</mat-icon>
+        } @else {
+        <mat-icon>arrow_left</mat-icon>
+        }
+      </button>
+    </div>
+    <ng-content></ng-content
+  ></mat-drawer-content>
 </mat-drawer-container>

@@ -6,3 +6,10 @@ mat-grid-tile {
   height: 100vh;
   background-color: beige;
 }
+
+.sidenav-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+}

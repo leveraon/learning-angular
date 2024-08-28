@@ -47,6 +47,11 @@ const routes: Routes = [
         './checkbox-tree-with-filter/checkbox-tree-with-filter.component'
       ).then((m) => m.CheckboxTreeWithFilterComponent),
   },
+  {
+    path: 'calendar',
+    loadComponent: () =>
+      import('./calendar/calendar.component').then((m) => m.CalendarComponent),
+  },
 ];
 
 @NgModule({
