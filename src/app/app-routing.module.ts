@@ -12,31 +12,31 @@ const routes: Routes = [
   {
     path: 'drag',
     loadChildren: () =>
-      import('./drag-drop/drag-drop.module').then((m) => m.DragDropModule),
+      import('./examples/drag-drop/drag-drop.module').then((m) => m.DragDropModule),
   },
   {
     path: 'expand-panel',
     loadChildren: () =>
-      import('./expand-panel/expand-panel.module').then(
+      import('./examples/expand-panel/expand-panel.module').then(
         (m) => m.ExpandPanelModule
       ),
   },
   {
     path: 'book-list',
     loadChildren: () =>
-      import('./book-list/books.module').then((m) => m.BooksModule),
+      import('./examples/book-list/books.module').then((m) => m.BooksModule),
   },
   {
     path: 'search-bar',
     loadComponent: () =>
-      import('./icon-search-bar/icon-search-bar.component').then(
+      import('./examples/icon-search-bar/icon-search-bar.component').then(
         (m) => m.IconSearchBarComponent
       ),
   },
   {
     path: 'plot-chart',
     loadComponent: () =>
-      import('./plot-chart/plot-chart.component').then(
+      import('./examples/plot-chart/plot-chart.component').then(
         (m) => m.PlotChartComponent
       ),
   },
@@ -44,13 +44,13 @@ const routes: Routes = [
     path: 'checkbox-tree',
     loadComponent: () =>
       import(
-        './checkbox-tree-with-filter/checkbox-tree-with-filter.component'
+        './examples/checkbox-tree-with-filter/checkbox-tree-with-filter.component'
       ).then((m) => m.CheckboxTreeWithFilterComponent),
   },
   {
     path: 'calendar',
     loadComponent: () =>
-      import('./calendar/calendar.component').then((m) => m.CalendarComponent),
+      import('./examples/calendar/calendar.component').then((m) => m.CalendarComponent),
   },
 ];
 
