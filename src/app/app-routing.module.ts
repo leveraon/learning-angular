@@ -4,15 +4,17 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./demo-home-page/demo-home-page.module').then(
-        (m) => m.DemoHomePageModule
+    loadComponent: () =>
+      import('./demo-home-page/demo-home-page.component').then(
+        (m) => m.DemoHomePageComponent
       ),
   },
   {
     path: 'drag',
     loadChildren: () =>
-      import('./examples/drag-drop/drag-drop.module').then((m) => m.DragDropModule),
+      import('./examples/drag-drop/drag-drop.module').then(
+        (m) => m.DragDropModule
+      ),
   },
   {
     path: 'expand-panel',
@@ -50,7 +52,16 @@ const routes: Routes = [
   {
     path: 'calendar',
     loadComponent: () =>
-      import('./examples/calendar/calendar.component').then((m) => m.CalendarComponent),
+      import('./examples/calendar/calendar.component').then(
+        (m) => m.CalendarComponent
+      ),
+  },
+  {
+    path: 'csv-output',
+    loadComponent: () =>
+      import('./examples/csv-ouput/csv-ouput.component').then(
+        (m) => m.CsvOuputComponent
+      ),
   },
 ];
 

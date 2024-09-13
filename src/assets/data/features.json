@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Drag & Drop (CDK)",
+    "path": "drag"
+  },
+  {
+    "title": " Expand Panel (Materials)",
+    "path": "expand-panel"
+  },
+  {
+    "title": "Book List (NgRX)",
+    "path": "book-list"
+  },
+  {
+    "title": " Search Bar (Animations)",
+    "path": "search-bar"
+  },
+  {
+    "title": " Plot (ObserbaleHQ)",
+    "path": "plot-chart"
+  },
+  {
+    "title": "Checkbox Tree (CDK/Material)",
+    "path": "checkbox-tree"
+  },
+  {
+    "title": "Calendar",
+    "path": "calendar"
+  }
+]

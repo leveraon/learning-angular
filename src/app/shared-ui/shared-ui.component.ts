@@ -1,9 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-
-export interface FeatureExample {
-  title: string;
-  path: string;
-}
+import { Feature } from '../shared-model/feature';
 
 @Component({
   selector: 'app-shared-ui',
@@ -14,43 +10,18 @@ export class SharedUiComponent implements OnInit {
   @Output()
   action: EventEmitter<string> = new EventEmitter();
 
-  features: FeatureExample[] = [];
+  features: Feature[] = [];
 
   ngOnInit(): void {
     this.buildFeatures();
   }
 
   buildFeatures(): void {
-    this.features = [
-      {
-        title: 'Drag & Drop (CDK)',
-        path: 'drag',
-      },
-      {
-        title: ' Expand Panel (Materials)',
-        path: 'expand-panel',
-      },
-      {
-        title: 'Book List (NgRX)',
-        path: 'book-list',
-      },
-      {
-        title: ' Search Bar (Animations)',
-        path: 'search-bar',
-      },
-      {
-        title: ' Plot (ObserbaleHQ)',
-        path: 'plot-chart',
-      },
-      {
-        title: 'Checkbox Tree (CDK/Material)',
-        path: 'checkbox-tree',
-      },
-      {
-        title: 'Calendar',
-        path: 'calendar',
-      },
-    ];
+    Promise.all([fetch('assets/data/features.json')]).then(
+      async ([features]) => {
+        this.features = await features.json();
+      }
+    );
   }
 
   performAction($event: string) {
