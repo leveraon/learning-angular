@@ -1,3 +1,8 @@
+<div class="export_csv">
+  <button mat-raised-button color="accent" (click)="exportCSV()">
+    Export to CSV
+  </button>
+</div>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource" matSort>
     <ng-container matColumnDef="Date">
@@ -34,5 +39,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
-  <mat-paginator #paginator [pageSizeOptions]="[25, 50]"></mat-paginator>
+  <mat-paginator
+    #paginator
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10]"
+  ></mat-paginator>
 </div>
