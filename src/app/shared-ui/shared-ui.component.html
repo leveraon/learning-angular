@@ -17,18 +17,23 @@
       </mat-list-item>
       }
     </mat-list>
+    <ng-container [ngTemplateOutlet]="sideToggle" />
   </mat-drawer>
 
-  <mat-drawer-content>
+  <ng-template #sideToggle>
     <div class="sidenav-toggle">
       <button mat-mini-fab (click)="drawer.toggle()">
         @if (drawer.opened) {
-        <mat-icon>chevron_right</mat-icon>
-        } @else {
         <mat-icon>chevron_left</mat-icon>
+        } @else {
+        <mat-icon>chevron_right</mat-icon>
         }
       </button>
     </div>
+  </ng-template>
+
+  <mat-drawer-content>
+    <ng-container [ngTemplateOutlet]="sideToggle" />
     <ng-content></ng-content
   ></mat-drawer-content>
 </mat-drawer-container>
