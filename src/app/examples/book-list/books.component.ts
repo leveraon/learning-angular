@@ -1,9 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { GoogleBooksService } from './books.service';
 import { Store } from '@ngrx/store';
 import { Router } from '@angular/router';
 import { selectBookCollection, selectBooks } from './state/books.selectors';
 import { BooksActions, BooksApiActions } from './state/books.actions';
+import { single } from 'rxjs';
 
 @Component({
   selector: 'app-books',
@@ -19,6 +20,7 @@ export class BooksComponent {
 
   books$ = this.store.select(selectBooks);
   bookCollection$ = this.store.select(selectBookCollection);
+  showProgress = signal(true);
 
   onAdd(bookId: string) {
     this.store.dispatch(BooksActions.addBook({ bookId }));
@@ -29,11 +31,10 @@ export class BooksComponent {
   }
 
   ngOnInit() {
-    this.booksService
-      .getBooks()
-      .subscribe((books) =>
-        this.store.dispatch(BooksApiActions.retrievedBookList({ books }))
-      );
+    this.booksService.getBooks().subscribe((books) => {
+      this.store.dispatch(BooksApiActions.retrievedBookList({ books }));
+      this.showProgress.set(false);
+    });
   }
 
   performAction(action: string) {

@@ -16,6 +16,7 @@ import { BooksComponent } from './books.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [BooksComponent, BookListComponent, BookCollectionComponent],
@@ -26,6 +27,7 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatTableModule,
     BooksRoutingModule,
+    MatProgressBarModule,
     StoreModule.forRoot({
       books: booksReducer,
       collection: collectionReducer,
