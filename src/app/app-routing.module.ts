@@ -63,6 +63,13 @@ const routes: Routes = [
         (m) => m.CsvOuputComponent
       ),
   },
+  {
+    path: 'scheduler',
+    loadComponent: () =>
+      import('./examples/scheduler/scheduler.component').then(
+        (m) => m.SchedulerComponent
+      ),
+  },
 ];
 
 @NgModule({
