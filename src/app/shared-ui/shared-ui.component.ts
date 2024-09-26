@@ -1,5 +1,12 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Feature } from '../shared-model/feature';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-shared-ui',
@@ -9,6 +16,9 @@ import { Feature } from '../shared-model/feature';
 export class SharedUiComponent implements OnInit {
   @Output()
   action: EventEmitter<string> = new EventEmitter();
+
+  @ViewChild('drawer')
+  drawer!: MatDrawer;
 
   features: Feature[] = [];
 
@@ -26,5 +36,6 @@ export class SharedUiComponent implements OnInit {
 
   performAction($event: string) {
     this.action.emit($event);
+    this.drawer.toggle();
   }
 }
