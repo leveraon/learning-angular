@@ -94,8 +94,13 @@
   </p>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button color="primary" mat-dialog-close>Cancel</button>
-  <button mat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>
-    Create
+  <button mat-raised-button color="primary" mat-dialog-close>Create</button>
+  <button
+    mat-raised-button
+    color="primary"
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Cancel
   </button>
 </mat-dialog-actions>
