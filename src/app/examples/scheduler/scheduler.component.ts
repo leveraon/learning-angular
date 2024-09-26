@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {
@@ -9,11 +9,19 @@ import {
   DayPilotMonthComponent,
   DayPilotNavigatorComponent,
 } from '@daypilot/daypilot-lite-angular';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { EventDialog } from './event-dialog';
 
 @Component({
   selector: 'app-scheduler',
   standalone: true,
-  imports: [CommonModule, DayPilotModule, MatButton, MatButtonToggleModule],
+  imports: [
+    CommonModule,
+    DayPilotModule,
+    MatButton,
+    MatButtonToggleModule,
+    MatDialogModule,
+  ],
   templateUrl: './scheduler.component.html',
   styleUrl: './scheduler.component.scss',
 })
@@ -24,8 +32,8 @@ export class SchedulerComponent {
   @ViewChild('navigator') nav!: DayPilotNavigatorComponent;
 
   events: DayPilot.EventData[] = [];
-
   date = DayPilot.Date.today();
+  readonly dialog = inject(MatDialog);
 
   contextMenu = new DayPilot.Menu({
     items: [
@@ -134,8 +142,8 @@ export class SchedulerComponent {
   configDay: DayPilot.CalendarConfig = {
     durationBarVisible: false,
     contextMenu: this.contextMenu,
-    theme: 'calendar_traditional',
-    onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
+    // theme: 'calendar_traditional',
+    onTimeRangeSelected: this.openDialog.bind(this),
     onBeforeEventRender: this.onBeforeEventRender.bind(this),
     onEventClick: this.onEventClick.bind(this),
   };
@@ -144,8 +152,8 @@ export class SchedulerComponent {
     viewType: 'Week',
     durationBarVisible: false,
     contextMenu: this.contextMenu,
-    theme: 'calendar_traditional',
-    onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
+    // theme: 'calendar_traditional',
+    onTimeRangeSelected: this.openDialog.bind(this),
     onBeforeEventRender: this.onBeforeEventRender.bind(this),
     onEventClick: this.onEventClick.bind(this),
   };
@@ -153,8 +161,8 @@ export class SchedulerComponent {
   configMonth: DayPilot.MonthConfig = {
     contextMenu: this.contextMenu,
     eventBarVisible: false,
-    theme: 'calendar_traditional',
-    onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
+    // theme: 'calendar_traditional',
+    onTimeRangeSelected: this.openDialog.bind(this),
     onEventClick: this.onEventClick.bind(this),
   };
 
@@ -280,5 +288,13 @@ export class SchedulerComponent {
     const dp = args.control;
 
     dp.events.update(modal.result);
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(EventDialog);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
