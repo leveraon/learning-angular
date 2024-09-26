@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'drag',
     loadChildren: () =>
       import('./examples/drag-drop/drag-drop.module').then(
-        (m) => m.DragDropModule
+        (m) => m.ExampleDragDropModule
       ),
   },
   {
