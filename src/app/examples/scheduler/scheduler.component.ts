@@ -115,6 +115,7 @@ export class SchedulerComponent {
     showMonths: 3,
     cellWidth: 25,
     cellHeight: 25,
+    // theme: 'calendar_traditional',
     onVisibleRangeChanged: (args) => {
       this.loadEvents();
     },
@@ -133,6 +134,7 @@ export class SchedulerComponent {
   configDay: DayPilot.CalendarConfig = {
     durationBarVisible: false,
     contextMenu: this.contextMenu,
+    theme: 'calendar_traditional',
     onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
     onBeforeEventRender: this.onBeforeEventRender.bind(this),
     onEventClick: this.onEventClick.bind(this),
@@ -142,6 +144,7 @@ export class SchedulerComponent {
     viewType: 'Week',
     durationBarVisible: false,
     contextMenu: this.contextMenu,
+    theme: 'calendar_traditional',
     onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
     onBeforeEventRender: this.onBeforeEventRender.bind(this),
     onEventClick: this.onEventClick.bind(this),
@@ -150,6 +153,7 @@ export class SchedulerComponent {
   configMonth: DayPilot.MonthConfig = {
     contextMenu: this.contextMenu,
     eventBarVisible: false,
+    theme: 'calendar_traditional',
     onTimeRangeSelected: this.onTimeRangeSelected.bind(this),
     onEventClick: this.onEventClick.bind(this),
   };

@@ -17,7 +17,6 @@
       </mat-list-item>
       }
     </mat-list>
-    <ng-container [ngTemplateOutlet]="sideToggle" />
   </mat-drawer>
 
   <ng-template #sideToggle>
@@ -33,7 +32,6 @@
   </ng-template>
 
   <mat-drawer-content>
-    <ng-container [ngTemplateOutlet]="sideToggle" />
-    <ng-content></ng-content
-  ></mat-drawer-content>
+    <ng-content></ng-content> <ng-container [ngTemplateOutlet]="sideToggle"
+  /></mat-drawer-content>
 </mat-drawer-container>
