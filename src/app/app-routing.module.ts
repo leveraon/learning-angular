@@ -70,6 +70,13 @@ const routes: Routes = [
         (m) => m.SchedulerComponent
       ),
   },
+  {
+    path: 'markdown',
+    loadComponent: () =>
+      import('./examples/ngx-markdown/ngx-markdown.component').then(
+        (m) => m.NgxMarkdownComponent
+      ),
+  },
 ];
 
 @NgModule({

@@ -31,6 +31,9 @@
     "@ngrx/store": "^18.0.0",
     "@observablehq/plot": "^0.6.15",
     "learning-angular": "file:",
+    "marked": "^14.1.2",
+    "ngx-markdown": "^18.0.0",
+    "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.7"
