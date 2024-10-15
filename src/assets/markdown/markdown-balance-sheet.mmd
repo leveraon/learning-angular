@@ -1,0 +1,44 @@
+graph LR
+  subgraph Assets
+    A[Cash & Cash Equivalents]
+    B[Accounts Receivable]
+    C[Inventory]
+    D[Prepaid Expenses]
+    E[Property, Plant & Equipment]
+    F[Intangible Assets]
+  end
+  subgraph Liabilities
+    G[Accounts Payable]
+    H[Salaries Payable]
+    I[Deferred Revenue]
+    J[Long-Term Debt]
+  end
+  subgraph Equity
+    K[Common Stock]
+    L[Retained Earnings]
+  end
+
+  A --> Assets
+  B --> Assets
+  C --> Assets
+  D --> Assets
+  E --> Assets
+  F --> Assets
+  G --> Liabilities
+  H --> Liabilities
+  I --> Liabilities
+  J --> Liabilities
+  K --> Equity
+  L --> Equity
+  Assets --> Total Assets
+  Liabilities --> Total Liabilities
+  Equity --> Total Equity
+  Total Assets --> Total Liabilities & Equity
+
+  style Assets fill:#f0f0f0,stroke:#333,stroke-width:2px
+  style Liabilities fill:#f0f0f0,stroke:#333,stroke-width:2px
+  style Equity fill:#f0f0f0,stroke:#333,stroke-width:2px
+  style Total Assets fill:#e0e0e0,stroke:#333,stroke-width:2px
+  style Total Liabilities fill:#e0e0e0,stroke:#333,stroke-width:2px
+  style Total Equity fill:#e0e0e0,stroke:#333,stroke-width:2px
+  style Total Liabilities & Equity fill:#e0e0e0,stroke:#333,stroke-width:2px
