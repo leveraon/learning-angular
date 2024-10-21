@@ -1,6 +1,8 @@
 <mat-tab-group>
   <mat-tab label="Angular">
-    <markdown [src]="'assets/markdown/markdown-angular.md'"> </markdown>
+    <div #scrollableContent>
+      <markdown [src]="'assets/markdown/markdown-angular.md'"> </markdown>
+    </div>
   </mat-tab>
   <mat-tab label="Graphql Java">
     <markdown [src]="'assets/markdown/markdown-graphql-java.md'"> </markdown>
