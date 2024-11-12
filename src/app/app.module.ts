@@ -13,15 +13,16 @@ import { SafeHtmlPipe } from './pipe/safe-html.pipe';
 import { SharedUiModule } from './shared-ui/shared-ui.module';
 
 @NgModule({
-  declarations: [AppComponent, SafeHtmlPipe],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    SharedUiModule,
-  ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        SharedUiModule,
+        SafeHtmlPipe,
+    ],
+    providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export class AppModule {}

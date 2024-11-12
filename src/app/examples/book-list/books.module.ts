@@ -19,20 +19,20 @@ import { MatTableModule } from '@angular/material/table';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
-  declarations: [BooksComponent, BookListComponent, BookCollectionComponent],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
-    MatTableModule,
-    BooksRoutingModule,
-    MatProgressBarModule,
-    StoreModule.forRoot({
-      books: booksReducer,
-      collection: collectionReducer,
-    }),
-  ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+    imports: [
+        CommonModule,
+        MatButtonModule,
+        MatIconModule,
+        MatListModule,
+        MatTableModule,
+        BooksRoutingModule,
+        MatProgressBarModule,
+        StoreModule.forRoot({
+            books: booksReducer,
+            collection: collectionReducer,
+        }),
+        BooksComponent, BookListComponent, BookCollectionComponent,
+    ],
+    providers: [provideHttpClient(withInterceptorsFromDi())],
 })
 export class BooksModule {}

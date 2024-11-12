@@ -5,11 +5,23 @@ import { Router } from '@angular/router';
 import { selectBookCollection, selectBooks } from './state/books.selectors';
 import { BooksActions, BooksApiActions } from './state/books.actions';
 import { single } from 'rxjs';
+import { BookCollectionComponent } from './book-collection.component';
+import { MatProgressBar } from '@angular/material/progress-bar';
+import { NgIf, AsyncPipe } from '@angular/common';
+import { BookListComponent } from './book-list.component';
 
 @Component({
-  selector: 'app-books',
-  templateUrl: './books.component.html',
-  styleUrls: ['./books.component.scss'],
+    selector: 'app-books',
+    templateUrl: './books.component.html',
+    styleUrls: ['./books.component.scss'],
+    standalone: true,
+    imports: [
+        BookListComponent,
+        NgIf,
+        MatProgressBar,
+        BookCollectionComponent,
+        AsyncPipe,
+    ],
 })
 export class BooksComponent {
   title = 'learning-angular';

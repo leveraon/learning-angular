@@ -8,15 +8,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [SharedUiComponent],
-  imports: [
-    CommonModule,
-    MatGridListModule,
-    MatButtonModule,
-    MatListModule,
-    MatSidenavModule,
-    MatIconModule,
-  ],
-  exports: [SharedUiComponent],
+    imports: [
+        CommonModule,
+        MatGridListModule,
+        MatButtonModule,
+        MatListModule,
+        MatSidenavModule,
+        MatIconModule,
+        SharedUiComponent,
+    ],
+    exports: [SharedUiComponent],
 })
 export class SharedUiModule {}

@@ -6,12 +6,31 @@ import {
   ViewChild,
 } from '@angular/core';
 import { Feature } from '../shared-model/feature';
-import { MatDrawer } from '@angular/material/sidenav';
+import { MatDrawer, MatDrawerContainer, MatDrawerContent } from '@angular/material/sidenav';
+import { NgTemplateOutlet } from '@angular/common';
+import { MatButton, MatMiniFabButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { MatList, MatListSubheaderCssMatStyler, MatListItem, MatListItemIcon, MatListItemTitle } from '@angular/material/list';
 
 @Component({
-  selector: 'app-shared-ui',
-  templateUrl: './shared-ui.component.html',
-  styleUrls: ['./shared-ui.component.scss'],
+    selector: 'app-shared-ui',
+    templateUrl: './shared-ui.component.html',
+    styleUrls: ['./shared-ui.component.scss'],
+    standalone: true,
+    imports: [
+        MatDrawerContainer,
+        MatDrawer,
+        MatList,
+        MatListSubheaderCssMatStyler,
+        MatListItem,
+        MatIcon,
+        MatListItemIcon,
+        MatListItemTitle,
+        MatButton,
+        MatMiniFabButton,
+        MatDrawerContent,
+        NgTemplateOutlet,
+    ],
 })
 export class SharedUiComponent implements OnInit {
   @Output()

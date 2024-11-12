@@ -8,8 +8,8 @@ describe('DemoHomePageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DemoHomePageComponent ]
-    })
+    imports: [DemoHomePageComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(DemoHomePageComponent);

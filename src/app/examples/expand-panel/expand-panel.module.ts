@@ -12,19 +12,17 @@ import { ExpandPanelComponent } from './expand-panel.component';
 
 
 @NgModule({
-  declarations: [
-    ExpandPanelComponent
-  ],
-  imports: [
-    CommonModule,
-    ExpandPanelRoutingModule,
-    MatButtonModule,
-    MatExpansionModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-  ]
+    imports: [
+        CommonModule,
+        ExpandPanelRoutingModule,
+        MatButtonModule,
+        MatExpansionModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        ExpandPanelComponent,
+    ]
 })
 export class ExpandPanelModule { }
