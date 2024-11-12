@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { SharedUiComponent } from './shared-ui/shared-ui.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Router } from '@angular/router';
       <router-outlet></router-outlet>
     </app-shared-ui>
   `,
+  standalone: true,
+  imports: [RouterOutlet, SharedUiComponent],
 })
 export class AppComponent {
   title = 'learning-angular';
