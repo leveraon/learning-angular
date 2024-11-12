@@ -1,13 +1,30 @@
+import {
+  CdkDrag,
+  CdkDragDrop,
+  CdkDragHandle,
+  CdkDropList,
+  DragDropModule,
+  moveItemInArray,
+  transferArrayItem,
+} from '@angular/cdk/drag-drop';
+import { CommonModule, NgFor, NgTemplateOutlet } from '@angular/common';
 import { Component } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem, CdkDropList, CdkDrag, CdkDragHandle } from '@angular/cdk/drag-drop';
-import { NgFor, NgTemplateOutlet } from '@angular/common';
 
 @Component({
-    selector: 'app-drag-drop',
-    templateUrl: './drag-drop.component.html',
-    styleUrls: ['./drag-drop.component.scss'],
-    standalone: true,
-    imports: [CdkDropList, NgFor, CdkDrag, NgTemplateOutlet, CdkDragHandle]
+  selector: 'app-drag-drop',
+  templateUrl: './drag-drop.component.html',
+  styleUrls: ['./drag-drop.component.scss'],
+  standalone: true,
+  imports: [
+    CdkDropList,
+    NgFor,
+    CdkDrag,
+    NgTemplateOutlet,
+    CdkDragHandle,
+    CommonModule,
+    DragDropModule,
+    DragDropComponent,
+  ],
 })
 export class DragDropComponent {
   todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
@@ -16,13 +33,17 @@ export class DragDropComponent {
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
     } else {
       transferArrayItem(
         event.previousContainer.data,
         event.container.data,
         event.previousIndex,
-        event.currentIndex,
+        event.currentIndex
       );
     }
   }

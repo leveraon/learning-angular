@@ -11,16 +11,16 @@ const routes: Routes = [
   },
   {
     path: 'drag',
-    loadChildren: () =>
-      import('./examples/drag-drop/drag-drop.module').then(
-        (m) => m.ExampleDragDropModule
+    loadComponent: () =>
+      import('./examples/drag-drop/drag-drop.component').then(
+        (m) => m.DragDropComponent
       ),
   },
   {
     path: 'expand-panel',
-    loadChildren: () =>
-      import('./examples/expand-panel/expand-panel.module').then(
-        (m) => m.ExpandPanelModule
+    loadComponent: () =>
+      import('./examples/expand-panel/expand-panel.component').then(
+        (m) => m.ExpandPanelComponent
       ),
   },
   {
