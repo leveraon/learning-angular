@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxMarkdownComponent } from './ngx-markdown.component';
+import { MarkedComponent } from './marked.component';
 
-describe('NgxMarkdownComponent', () => {
-  let component: NgxMarkdownComponent;
-  let fixture: ComponentFixture<NgxMarkdownComponent>;
+describe('MarkedComponent', () => {
+  let component: MarkedComponent;
+  let fixture: ComponentFixture<MarkedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgxMarkdownComponent]
+      imports: [MarkedComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NgxMarkdownComponent);
+    fixture = TestBed.createComponent(MarkedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -73,8 +73,8 @@ const routes: Routes = [
   {
     path: 'markdown',
     loadComponent: () =>
-      import('./examples/ngx-markdown/ngx-markdown.component').then(
-        (m) => m.NgxMarkdownComponent
+      import('./examples/marked/marked.component').then(
+        (m) => m.MarkedComponent
       ),
   },
 ];
