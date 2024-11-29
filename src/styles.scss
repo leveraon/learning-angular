@@ -1,6 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@import "./assets/styles/m3-theme.scss";
+@use "@angular/cdk" as cdk;
 
-.spacer {
-  margin-left: 0.25rem;
-}
+@include cdk.overlay();
