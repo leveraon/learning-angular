@@ -2,7 +2,7 @@ import { configureStore, Tuple } from '@reduxjs/toolkit';
 import checkoutPanelReducer from './reducer/checkout-panel.reducer';
 // import { logger } from '../logger/logger';
 
-export const ATStore = configureStore({
+export const LATStore = configureStore({
   reducer: {
     checkout: checkoutPanelReducer,
   },

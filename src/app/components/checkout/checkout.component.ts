@@ -1,7 +1,7 @@
 import { Overlay } from '@angular/cdk/overlay';
 import { Component, inject, output } from '@angular/core';
-import { CLOSE_CHECKOUT } from '@at-shared/store/action/checkout-panel-actions';
-import { ATStore } from '@at-shared/store/store';
+import { CLOSE_CHECKOUT } from '@lat-shared/store/action/checkout-panel-actions';
+import { LATStore } from '@lat-shared/store/store';
 
 @Component({
   selector: 'app-checkout',
@@ -13,7 +13,7 @@ import { ATStore } from '@at-shared/store/store';
 export class CheckoutComponent {
   overlay = inject(Overlay);
   action = output<string>();
-  store = ATStore;
+  store = LATStore;
 
   emitAction($action: string): void {
     this.action.emit($action);

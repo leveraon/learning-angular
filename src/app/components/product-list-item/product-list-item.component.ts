@@ -1,6 +1,6 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component, inject, output } from '@angular/core';
-import { ProductQuickviewComponent } from '@at-components/product-quickview/product-quickview.component';
+import { ProductQuickviewComponent } from '@lat-components/product-quickview/product-quickview.component';
 
 @Component({
   selector: 'app-product-list-item',
