@@ -1,21 +1,8 @@
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CdkMenu, CdkMenuItem, CdkMenuTrigger } from '@angular/cdk/menu';
 import { Component, OnInit } from '@angular/core';
-import { Dictionary } from '@lat-shared/models/dictionary';
-import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { FILTER_OPTIONS, SORT_OPTIONS } from '@lat-shared/mock/product-filter';
 
-const SORT_OPTIONS: string[] = [
-  'Most Popular',
-  'Best Rating',
-  'Newest',
-  'Price: Low to High',
-  'Price: High to Low',
-];
-
-const FILTER_OPTIONS: Dictionary<string[]> = {
-  Color: ['White', 'Beige', 'Blue', 'Brown', 'Green', 'Purple'],
-  Category: ['New Arrivals', 'Sale', 'Travel', 'Organization', 'Accessories'],
-  Size: ['S', 'M', 'L', 'XL', 'XXL'],
-};
 @Component({
   selector: 'app-product-filter',
   standalone: true,
