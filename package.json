@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate": "npx @openapitools/openapi-generator-cli generate -g typescript-angular -i src/app/shared/schemas/petstore.yaml -o src/app/shared/models/"
+    "generate": "npx @openapitools/openapi-generator-cli generate -g typescript-angular -i src/app/shared/schemas/petstore.yaml -o src/app/shared/openapi/"
   },
   "private": true,
   "dependencies": {
