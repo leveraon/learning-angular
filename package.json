@@ -9,7 +9,8 @@
     "test": "ng test",
     "generate": "graphql-codegen --config codegen.yml",
     "angular-gen": "npx @openapitools/openapi-generator-cli generate -g typescript-angular -i src/app/shared/schemas/petstore.yaml -o src/app/generated/angular/",
-    "graphql-gen": "npx @openapitools/openapi-generator-cli generate -g graphql-schema -i src/app/shared/schemas/petstore.yaml -o src/app/generated/graphql/"
+    "graphql-gen": "npx @openapitools/openapi-generator-cli generate -g graphql-schema -i src/app/shared/schemas/petstore.yaml -o src/app/generated/graphql/",
+    "java-gen": "npx @openapitools/openapi-generator-cli generate -g spring -i src/app/shared/schemas/petstore.yaml -o src/app/generated/spring/"
   },
   "private": true,
   "dependencies": {
