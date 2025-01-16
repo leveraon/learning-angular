@@ -28,6 +28,7 @@
     "jsdom": "^25.0.1",
     "learning-angular": "file:",
     "marked": "^15.0.0",
+    "moment": "^2.30.1",
     "ng-apexcharts": "^1.15.0",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",

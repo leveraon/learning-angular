@@ -38,5 +38,9 @@
   {
     "title": "Marked",
     "path": "markdown"
+  },
+  {
+    "title": "Apex Charts",
+    "path": "apex-chart"
   }
 ]

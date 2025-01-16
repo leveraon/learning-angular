@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, ViewChild } from '@angular/core';
-import { MatButton } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import {
   DayPilot,
   DayPilotCalendarComponent,
@@ -9,7 +9,6 @@ import {
   DayPilotMonthComponent,
   DayPilotNavigatorComponent,
 } from '@daypilot/daypilot-lite-angular';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { EventDialog } from './event-dialog';
 
 @Component({
@@ -18,7 +17,6 @@ import { EventDialog } from './event-dialog';
   imports: [
     CommonModule,
     DayPilotModule,
-    MatButton,
     MatButtonToggleModule,
     MatDialogModule,
   ],

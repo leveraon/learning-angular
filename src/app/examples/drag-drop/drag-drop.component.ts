@@ -23,7 +23,6 @@ import { Component } from '@angular/core';
     CdkDragHandle,
     CommonModule,
     DragDropModule,
-    DragDropComponent,
   ],
 })
 export class DragDropComponent {

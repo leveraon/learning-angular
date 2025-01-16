@@ -50,13 +50,6 @@ const routes: Routes = [
       ).then((m) => m.CheckboxTreeWithFilterComponent),
   },
   {
-    path: 'calendar',
-    loadComponent: () =>
-      import('./examples/calendar/calendar.component').then(
-        (m) => m.CalendarComponent
-      ),
-  },
-  {
     path: 'csv-output',
     loadComponent: () =>
       import('./examples/csv-ouput/csv-ouput.component').then(
@@ -75,6 +68,13 @@ const routes: Routes = [
     loadComponent: () =>
       import('./examples/marked/marked.component').then(
         (m) => m.MarkedComponent
+      ),
+  },
+  {
+    path: 'apex-chart',
+    loadComponent: () =>
+      import('./examples/apex-charts/apex-charts.component').then(
+        (m) => m.ApexChartsComponent
       ),
   },
 ];
