@@ -28,7 +28,7 @@
     "@fullcalendar/interaction": "^6.1.14",
     "@fullcalendar/list": "^6.1.14",
     "@fullcalendar/timegrid": "^6.1.14",
-    "@ngrx/store": "^18.0.0",
+    "@ngrx/store": "^19.0.0",
     "@observablehq/plot": "^0.6.15",
     "jsdom": "^25.0.1",
     "learning-angular": "file:",
