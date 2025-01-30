@@ -17,10 +17,14 @@
     </app-markdown>
   </mat-tab>
   <mat-tab label="Markdown Toolbar">
-    <textarea aria-label="Markdown Input" #markdownInput></textarea>
     <app-markdown-toolbar
       [targetElementRef]="markdownInputRef"
       (formatApplied)="updateMarkdown($event)"
     ></app-markdown-toolbar>
+    <textarea
+      aria-label="Markdown Input"
+      [value]="markdownContent"
+      #markdownInput
+    ></textarea>
   </mat-tab>
 </mat-tab-group>
