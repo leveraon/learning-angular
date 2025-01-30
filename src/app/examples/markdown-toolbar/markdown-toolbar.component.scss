@@ -1,0 +1,19 @@
+/* markdown-toolbar.component.css */
+.markdown-toolbar {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-toolbar button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.markdown-toolbar button:hover {
+  background-color: #e0e0e0;
+}
