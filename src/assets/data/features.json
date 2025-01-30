@@ -24,10 +24,6 @@
     "path": "checkbox-tree"
   },
   {
-    "title": "Calendar",
-    "path": "calendar"
-  },
-  {
     "title": "CSV Output",
     "path": "csv-output"
   },

@@ -43,7 +43,7 @@ export class ApexChartsComponent {
         },
       ],
       chart: {
-        height: 350,
+        height: 680,
         type: 'candlestick',
       },
       title: {
