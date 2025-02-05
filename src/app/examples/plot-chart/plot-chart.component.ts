@@ -53,6 +53,7 @@ export class PlotChartComponent implements OnInit {
               }),
               Plot.lineY(aapl, { x: 'Date', y: 'Close' }),
               Plot.tip(aapl, Plot.pointerX({ x: 'Date', y: 'Close' })),
+              Plot.crosshair(aapl, { x: 'Date', y: 'Close' }),
             ],
           });
           this.div.append(this.data);
