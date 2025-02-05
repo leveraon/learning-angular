@@ -1,0 +1,629 @@
+{
+  "results": [
+    {
+      "id": "c61d4fb264a167c5c4ca6a0aa392e6295652d6eb9431eeb6d2517b73ef52e5f8",
+      "publisher": {
+        "name": "Benzinga",
+        "homepage_url": "https://www.benzinga.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      },
+      "title": "Nvidia, SMCI, Broadcom, And Other Tech Stocks Slide In Monday Pre-Market As Trump Imposes Tariffs On Imports From China, Mexico, And Canada",
+      "author": "Kaustubh Bagalkote",
+      "published_utc": "2025-02-03T09:44:11Z",
+      "article_url": "https://www.benzinga.com/news/global/25/02/43428104/nvidia-tsmc-apple-and-other-tech-stocks-slide-in-pre-market-trading-as-trump-imposes-tariffs-on-impor",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "AAPL",
+        "META",
+        "INTC",
+        "SMCI",
+        "AVGO",
+        "TSM"
+      ],
+      "image_url": "https://cdn.benzinga.com/files/images/story/2025/02/03/The-Red-Crashing-Market-Volatility-Of-Cr.jpeg?width=1200&height=800&fit=crop",
+      "description": "U.S. technology stocks tumbled in pre-market trading after President Donald Trump imposed substantial tariffs on imports from Canada, China, and Mexico, raising concerns about potential retaliation affecting the tech sector.",
+      "keywords": [
+        "Nvidia",
+        "SMCI",
+        "Broadcom",
+        "tech stocks",
+        "tariffs",
+        "China",
+        "Mexico",
+        "Canada"
+      ],
+      "insights": [
+        {
+          "ticker": "NVDA",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Nvidia's stock fell 3.91% in pre-market trading due to concerns over the impact of the new tariffs on the tech sector."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Microsoft's stock dropped 1.46% in pre-market trading due to the broader sell-off in the tech sector."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Apple's stock declined 2.01% in pre-market trading due to the concerns over the impact of the new tariffs on the tech sector."
+        },
+        {
+          "ticker": "META",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Meta Platforms' stock slipped 1.66% in pre-market trading due to the broader sell-off in the tech sector."
+        },
+        {
+          "ticker": "INTC",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Intel's stock decreased 2.11% in pre-market trading due to the concerns over the impact of the new tariffs on the tech sector."
+        },
+        {
+          "ticker": "SMCI",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Super Micro Computer's stock dropped 2.95% in pre-market trading due to the broader sell-off in the semiconductor stocks."
+        },
+        {
+          "ticker": "AVGO",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Broadcom's stock fell 2.62% in pre-market trading due to the broader sell-off in the semiconductor stocks."
+        },
+        {
+          "ticker": "TSM",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Taiwan Semiconductor Manufacturing Company's stock declined 3.26% in pre-market trading due to the broader sell-off in the semiconductor stocks."
+        }
+      ]
+    },
+    {
+      "id": "22d3d32ea4999d7bdba2607bce428af89fc6db52cf73ab4ac3556dd00f39f8e9",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "2 Historically Cheap Warren Buffett Stocks to Buy With Confidence in February, and 1 to Avoid",
+      "author": "The Motley Fool",
+      "published_utc": "2025-02-03T09:41:00Z",
+      "article_url": "https://www.fool.com/investing/2025/02/03/2-warren-buffett-stocks-buy-in-february-1-to-avoid/?source=iedfolrf0000001",
+      "tickers": ["SIRI", "KO", "AAPL"],
+      "image_url": "https://g.foolcdn.com/editorial/images/805985/buffett8-tmf.jpg",
+      "description": "The article discusses two Warren Buffett stocks that are currently undervalued and worth buying, Sirius XM Holdings and Coca-Cola, as well as one stock, Apple, that should be avoided due to stagnant growth and high valuation.",
+      "keywords": [
+        "Warren Buffett",
+        "Sirius XM Holdings",
+        "Coca-Cola",
+        "Apple"
+      ],
+      "insights": [
+        {
+          "ticker": "SIRI",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article cites Sirius XM's legal monopoly in satellite radio, stable subscription-based revenue model, and historically low valuation as reasons to buy the stock."
+        },
+        {
+          "ticker": "KO",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article highlights Coca-Cola's geographic diversity, consistent demand for its products, and attractive valuation compared to its historical average as reasons to buy the stock."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "The article notes that Apple's physical product sales have stagnated, and the stock is trading at a historically high valuation, making it a stock to avoid."
+        }
+      ]
+    },
+    {
+      "id": "038e5d8e5f24903dd53b9aed417cf4d3270fbfb8e72875a4d54c436a6d09c1e4",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "DeepSeek Just Changed Generative Artificial Intelligence (AI) Forever. 2 Surprising Winners From Its Innovation.",
+      "author": "The Motley Fool",
+      "published_utc": "2025-02-02T17:15:00Z",
+      "article_url": "https://www.fool.com/investing/2025/02/02/deepseek-just-changed-generative-artificial-intell/?source=iedfolrf0000001",
+      "tickers": ["AAPL", "META"],
+      "image_url": "https://g.foolcdn.com/editorial/images/805587/gettyimages-artificial-intelligence-ai-chatbot-phone-agent.jpg",
+      "description": "DeepSeek, a Chinese AI startup, has developed a highly efficient AI model that can match the performance of industry-leading models at a fraction of the cost. This could have significant implications for companies like Apple and Meta Platforms, which are focused on on-device AI and scaling AI capabilities, respectively.",
+      "keywords": ["DeepSeek", "Generative AI", "Apple", "Meta Platforms"],
+      "insights": [
+        {
+          "ticker": "AAPL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "Apple could adopt DeepSeek's methods to make the iPhone more capable of handling AI inference, leading to improved features like a more conversational Siri, faster translation, and better productivity tools. This could boost Apple's iPhone sales and services revenue."
+        },
+        {
+          "ticker": "META",
+          "sentiment": "positive",
+          "sentiment_reasoning": "DeepSeek's efficient AI model could help Meta scale its AI capabilities and expand AI features to more parts of its business, unlocking huge profits. Reducing the cost of AI inference could be a significant benefit for Meta, which has been working on this challenge."
+        }
+      ]
+    },
+    {
+      "id": "2cc32f8e6960428c0a575e4c993be83d49d3340ee649c70aab12736d2b1aa8ef",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "Does Billionaire Warren Buffett Know Something Wall Street Doesn’t? Here's 1 Possible Warning Sign From the Oracle of Omaha.",
+      "author": "The Motley Fool",
+      "published_utc": "2025-02-02T15:15:00Z",
+      "article_url": "https://www.fool.com/investing/2025/02/02/billionaire-warren-buffett-wall-street-warning/?source=iedfolrf0000001",
+      "tickers": [
+        "BRK.A",
+        "BRK.B",
+        "AAPL",
+        "BAC",
+        "BACpB",
+        "BACpE",
+        "BACpK",
+        "BACpL",
+        "BACpM",
+        "BACpN",
+        "BACpO",
+        "BACpP",
+        "BACpQ",
+        "BACpS",
+        "BMLpG",
+        "BMLpH",
+        "BMLpJ",
+        "BMLpL",
+        "MERpK"
+      ],
+      "image_url": "https://g.foolcdn.com/editorial/images/805427/holding-warning-sign-attention-please.jpg",
+      "description": "Warren Buffett's Berkshire Hathaway has been selling stocks and accumulating cash, which could signal concerns about the market's high valuation. The article discusses the CAPE ratio and its historical relationship with future stock market returns.",
+      "keywords": [
+        "Warren Buffett",
+        "Berkshire Hathaway",
+        "CAPE ratio",
+        "stock market valuation"
+      ],
+      "insights": [
+        {
+          "ticker": "BRK.A",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling stocks and accumulating a large cash position, which could indicate that Warren Buffett is concerned about the current market valuation."
+        },
+        {
+          "ticker": "BRK.B",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling stocks and accumulating a large cash position, which could indicate that Warren Buffett is concerned about the current market valuation."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Apple, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BAC",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpB",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpE",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpK",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpM",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpN",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpO",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpP",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpQ",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BACpS",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BMLpG",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BMLpH",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BMLpJ",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "BMLpL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        },
+        {
+          "ticker": "MERpK",
+          "sentiment": "negative",
+          "sentiment_reasoning": "Berkshire Hathaway has been selling its stake in Bank of America, which could suggest Buffett's concerns about the market's high valuation."
+        }
+      ]
+    },
+    {
+      "id": "7c7dd5e23b5489b07426819b96583d69bc617233f04104122121ba54174a894a",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "This High-Powered Vanguard Fund Has Generated 160% Returns Since 2020. Here's Why It Can Still Go Higher.",
+      "author": "David Jagielski",
+      "published_utc": "2025-02-02T11:30:00Z",
+      "article_url": "https://www.fool.com/investing/2025/02/02/this-high-powered-vanguared-fund-has-generated-160/?source=iedfolrf0000001",
+      "tickers": ["VGT", "AAPL", "NVDA", "MSFT", "AVGO"],
+      "image_url": "https://g.foolcdn.com/editorial/images/805132/business-person-giving-a-thumbs-up.jpg",
+      "description": "The Vanguard Information Technology Index Fund (VGT) has outperformed the S&P 500 by a wide margin since 2020, generating around 160% in returns. The fund's focus on top tech stocks like Apple, Nvidia, and Microsoft has benefited from the growth in artificial intelligence. While the fund's heavy concentration in a few stocks could make it vulnerable to a correction, the continued growth opportunities in AI suggest the fund can still go higher.",
+      "keywords": [
+        "Vanguard Information Technology Index Fund",
+        "ETF",
+        "artificial intelligence",
+        "tech stocks"
+      ],
+      "insights": [
+        {
+          "ticker": "VGT",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The fund has generated strong returns of around 160% since 2020, outperforming the S&P 500, due to its focus on top tech stocks that have benefited from the growth in artificial intelligence. While the fund's heavy concentration in a few stocks could make it vulnerable to a correction, the continued growth opportunities in AI suggest the fund can still go higher."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "Apple is one of the top holdings in the Vanguard Information Technology Index Fund, accounting for a significant portion of the fund's portfolio. The article suggests that the fund's exposure to tech giants like Apple has contributed to its strong performance."
+        },
+        {
+          "ticker": "NVDA",
+          "sentiment": "positive",
+          "sentiment_reasoning": "Nvidia is another top holding in the Vanguard Information Technology Index Fund, and the article indicates that the fund's exposure to companies benefiting from the growth in artificial intelligence, such as Nvidia, has been a key driver of its performance."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "positive",
+          "sentiment_reasoning": "Microsoft is the third-largest holding in the Vanguard Information Technology Index Fund, and the article suggests that the fund's exposure to tech giants like Microsoft has contributed to its strong returns."
+        },
+        {
+          "ticker": "AVGO",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Broadcom is the fourth-largest holding in the Vanguard Information Technology Index Fund, accounting for around 6% of the fund's portfolio. The article does not provide any specific commentary on Broadcom's performance or its impact on the fund."
+        }
+      ]
+    },
+    {
+      "id": "50b5344b3c91d366370c6a4bf27de0dc70574148f63343c780128e907bb3f015",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "Apple Stock Analysis: Buy or Sell?",
+      "author": "Parkev Tatevosian, Cfa",
+      "published_utc": "2025-02-01T10:45:00Z",
+      "article_url": "https://www.fool.com/investing/2025/02/01/apple-stock-analysis-buy-or-sell/?source=iedfolrf0000001",
+      "tickers": ["AAPL", "BRK.A", "BRK.B"],
+      "image_url": "https://g.foolcdn.com/editorial/images/806106/stock-market-data-hundred-dollar-bill.jpg",
+      "description": "The article discusses Warren Buffett's investment in two leading AI stocks, which make up a significant portion of Berkshire Hathaway's portfolio. It also mentions Apple's $725 billion investment and its impact on the company's growth, as well as a Warren Buffett AI stock that Wall Street thinks is headed to $4 trillion in 2025.",
+      "keywords": [
+        "Warren Buffett",
+        "Berkshire Hathaway",
+        "Artificial Intelligence",
+        "Apple"
+      ],
+      "insights": [
+        {
+          "ticker": "AAPL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions that Apple's $725 billion investment is fueling its growth, which suggests a positive outlook for the company."
+        },
+        {
+          "ticker": "BRK.A",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article highlights that Warren Buffett has a significant portion of Berkshire Hathaway's portfolio invested in two leading AI stocks, indicating a positive sentiment towards the company's investment strategy."
+        },
+        {
+          "ticker": "BRK.B",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article highlights that Warren Buffett has a significant portion of Berkshire Hathaway's portfolio invested in two leading AI stocks, indicating a positive sentiment towards the company's investment strategy."
+        }
+      ]
+    },
+    {
+      "id": "ea1a1deaf21d0a0eb8319b036a898b66350e87784de2e8fc33a04357f9af7d0b",
+      "publisher": {
+        "name": "Benzinga",
+        "homepage_url": "https://www.benzinga.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/benzinga.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/benzinga.ico"
+      },
+      "title": "EXCLUSIVE: This 'Magnificent 7' Stock Will Feel The Pinch Of Fed's Rate Decision, Poll Shows",
+      "author": "Chris Katje",
+      "published_utc": "2025-01-31T20:54:46Z",
+      "article_url": "https://www.benzinga.com/trading-ideas/25/01/43403758/exclusive-this-magnificent-7-stock-will-feel-the-pinch-of-feds-rate-decision-poll-shows",
+      "tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA"
+      ],
+      "image_url": "https://cdn.benzinga.com/files/images/story/2025/01/31/The-Magnificent-Seven--7-Of-Largest-Us-T.jpeg?width=1200&height=800&fit=crop",
+      "description": "A Benzinga poll asked which of the 'Magnificent 7' stocks (Apple, Amazon, Alphabet, Meta, Microsoft, Nvidia, Tesla) would be most negatively impacted by the Federal Reserve's decision to leave interest rates unchanged. Tesla was the top pick, likely due to its more expensive products and higher borrowing costs.",
+      "keywords": [
+        "Federal Reserve",
+        "interest rates",
+        "Magnificent 7",
+        "Tesla",
+        "Nvidia",
+        "Alphabet"
+      ],
+      "insights": [
+        {
+          "ticker": "AAPL",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article does not provide a specific sentiment for Apple, suggesting it may not be significantly impacted by the Fed's decision."
+        },
+        {
+          "ticker": "AMZN",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article does not provide a specific sentiment for Amazon, suggesting it may not be significantly impacted by the Fed's decision."
+        },
+        {
+          "ticker": "GOOG",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article notes that Alphabet received no votes in the poll, suggesting it may benefit or not be negatively impacted by the Fed's decision."
+        },
+        {
+          "ticker": "GOOGL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article notes that Alphabet received no votes in the poll, suggesting it may benefit or not be negatively impacted by the Fed's decision."
+        },
+        {
+          "ticker": "META",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article does not provide a specific sentiment for Meta, suggesting it may not be significantly impacted by the Fed's decision."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article does not provide a specific sentiment for Microsoft, suggesting it may not be significantly impacted by the Fed's decision."
+        },
+        {
+          "ticker": "NVDA",
+          "sentiment": "negative",
+          "sentiment_reasoning": "The article states that Nvidia ranked second in the poll as a company that likely benefits from other companies seeing growth, suggesting it may be negatively impacted by the Fed's decision."
+        },
+        {
+          "ticker": "TSLA",
+          "sentiment": "negative",
+          "sentiment_reasoning": "The article states that Tesla won the poll, with 39% of respondents saying the stock would be impacted the worst by the Fed's decision, likely due to its more expensive products and higher borrowing costs."
+        }
+      ]
+    },
+    {
+      "id": "788c183fe73878e263f06fa837aff3cbc0122cf67915e2cf473eb9e8d269b145",
+      "publisher": {
+        "name": "Investing.com",
+        "homepage_url": "https://www.investing.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/investing.png",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/investing.ico"
+      },
+      "title": "Magnificent 7 Earnings Week: This AI Stock Outperformed Them All",
+      "author": "Valuewalk",
+      "published_utc": "2025-01-31T20:43:00Z",
+      "article_url": "https://www.investing.com/analysis/magnificent-7-earnings-week-this-ai-stock-outperformed-them-all-200656861",
+      "tickers": ["IBM", "TSLA", "MSFT", "META", "AAPL"],
+      "amp_url": "https://m.investing.com/analysis/magnificent-7-earnings-week-this-ai-stock-outperformed-them-all-200656861?ampMode=1",
+      "image_url": "https://i-invdn-com.investing.com/redesign/images/seo/investingcom_analysis_og.jpg",
+      "description": "IBM, an AI-focused tech pioneer, was the second-best performing stock on the S&P 500 this week, rising 13.5% on solid Q4 results and a robust outlook, particularly in its software and AI businesses.",
+      "keywords": ["IBM", "AI", "earnings", "software", "cloud"],
+      "insights": [
+        {
+          "ticker": "IBM",
+          "sentiment": "positive",
+          "sentiment_reasoning": "IBM's strong Q4 performance, driven by growth in its software and AI businesses, led to a 13.5% stock price increase, making it the second-best performer on the S&P 500 this week."
+        },
+        {
+          "ticker": "TSLA",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Tesla did not make much of an impact this earnings week, according to the article."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Microsoft did not make much of an impact this earnings week, according to the article."
+        },
+        {
+          "ticker": "META",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Meta Platforms did not make much of an impact this earnings week, according to the article."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Apple did not make much of an impact this earnings week, according to the article."
+        }
+      ]
+    },
+    {
+      "id": "ff378ef8cbc2d268790eab2c7165c36483af1b33be66db1ab1b6c6ee4ba6735e",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "Can This Popular Vanguard Tech ETF Trounce the S&P 500 Again in 2025?",
+      "author": "George Budwell",
+      "published_utc": "2025-01-31T10:30:00Z",
+      "article_url": "https://www.fool.com/investing/2025/01/31/can-this-popular-vanguard-tech-etf-trounce-the-sp/?source=iedfolrf0000001",
+      "tickers": ["VGT", "AAPL", "NVDA", "MSFT"],
+      "image_url": "https://g.foolcdn.com/editorial/images/805855/robotics-getty.jpg",
+      "description": "The Vanguard Information Technology ETF (VGT) has delivered strong returns in recent years, but its future performance may be impacted by factors like elevated valuations of its top holdings and the emergence of cost-effective AI models from Chinese companies. While the long-term growth potential of the ETF remains compelling, investors should carefully evaluate the near-term risks and opportunities.",
+      "keywords": [
+        "Vanguard Information Technology ETF",
+        "AI",
+        "technology sector",
+        "ETF investing"
+      ],
+      "insights": [
+        {
+          "ticker": "VGT",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article suggests the ETF may face near-term headwinds due to the elevated valuations of its top holdings and the emergence of cost-effective AI models from Chinese companies, but its long-term growth potential remains compelling."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "negative",
+          "sentiment_reasoning": "The article suggests Apple's recent decision to integrate ChatGPT could potentially erode its premium market positioning."
+        },
+        {
+          "ticker": "NVDA",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "The article notes that Nvidia's current valuation, with a forward P/E ratio above 30, suggests much of its anticipated growth is already reflected in its stock price."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "neutral",
+          "sentiment_reasoning": "Similar to Nvidia, the article suggests Microsoft's current valuation, with a forward P/E ratio above 30, may limit its ability to deliver market-beating returns."
+        }
+      ]
+    },
+    {
+      "id": "430bb0f96079994b5429f8472ece7b70aa460f18ac6c07de484da66162d0fbb4",
+      "publisher": {
+        "name": "The Motley Fool",
+        "homepage_url": "https://www.fool.com/",
+        "logo_url": "https://s3.polygon.io/public/assets/news/logos/themotleyfool.svg",
+        "favicon_url": "https://s3.polygon.io/public/assets/news/favicons/themotleyfool.ico"
+      },
+      "title": "Could Investing $25,000 in the Vanguard S&P 500 ETF Make You a Millionaire?",
+      "author": "Justin Pope",
+      "published_utc": "2025-01-31T10:23:00Z",
+      "article_url": "https://www.fool.com/investing/2025/01/31/could-investing-25000-in-vanguard-sp-500-etf-make/?source=iedfolrf0000001",
+      "tickers": [
+        "GOOG",
+        "GOOGL",
+        "AMZN",
+        "AAPL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA",
+        "VOO",
+        "MCD"
+      ],
+      "image_url": "https://g.foolcdn.com/editorial/images/804586/investor-stock-market.jpg",
+      "description": "The article discusses how the S&P 500 index is a good way for investors to benefit from the growth potential of artificial intelligence (AI) without having to pick individual winners. It highlights the 'Magnificent Seven' companies that are leaders in AI, but notes that diversifying across the broader S&P 500 is a safer approach.",
+      "keywords": [
+        "S&P 500",
+        "Artificial Intelligence",
+        "Diversification",
+        "Index Investing"
+      ],
+      "insights": [
+        {
+          "ticker": "GOOG",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Alphabet (Google) as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "GOOGL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Alphabet (Google) as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "AMZN",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Amazon as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "AAPL",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Apple as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "META",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Meta Platforms (Facebook) as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "MSFT",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Microsoft as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "NVDA",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Nvidia as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "TSLA",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article mentions Tesla as one of the 'Magnificent Seven' companies that are involved in various AI opportunities, indicating its potential to benefit from the growth of AI."
+        },
+        {
+          "ticker": "VOO",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article recommends the Vanguard S&P 500 ETF as the best way for investors to ride the potential of AI, as it provides diversified exposure to the 'Magnificent Seven' companies and the broader S&P 500 index."
+        },
+        {
+          "ticker": "MCD",
+          "sentiment": "positive",
+          "sentiment_reasoning": "The article suggests that companies like McDonald's may benefit from AI by automating their operations, indicating the potential for AI to provide value to other industries beyond the 'Magnificent Seven' companies."
+        }
+      ]
+    }
+  ],
+  "status": "OK",
+  "request_id": "af2e6b372f9dec72ecf87f083c75823f",
+  "count": 10,
+  "next_url": "https://api.polygon.io/v2/reference/news?cursor=YXA9MjAyNS0wMS0zMVQxMCUzQTIzJTNBMDBaJmFzPTQzMGJiMGY5NjA3OTk5NGI1NDI5Zjg0NzJlY2U3YjcwYWE0NjBmMThhYzZjMDdkZTQ4NGRhNjYxNjJkMGZiYjQmb3JkZXI9ZGVzY2VuZGluZyZ0aWNrZXI9QUFQTA"
+}
