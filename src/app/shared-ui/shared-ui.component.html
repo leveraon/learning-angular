@@ -19,19 +19,17 @@
     </mat-list>
   </mat-drawer>
 
-  <ng-template #sideToggle>
-    <div class="sidenav-toggle">
-      <button mat-mini-fab (click)="drawer.toggle()">
-        @if (drawer.opened) {
-        <mat-icon>chevron_left</mat-icon>
-        } @else {
-        <mat-icon>chevron_right</mat-icon>
-        }
-      </button>
-    </div>
-  </ng-template>
-
   <mat-drawer-content>
-    <ng-content></ng-content> <ng-container [ngTemplateOutlet]="sideToggle"
-  /></mat-drawer-content>
+    <mat-toolbar>
+      <button
+        mat-icon-button
+        aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <ng-content></ng-content>
+  </mat-drawer-content>
 </mat-drawer-container>

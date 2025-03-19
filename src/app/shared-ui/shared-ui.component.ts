@@ -5,32 +5,41 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import { Feature } from '../shared-model/feature';
-import { MatDrawer, MatDrawerContainer, MatDrawerContent } from '@angular/material/sidenav';
-import { NgTemplateOutlet } from '@angular/common';
-import { MatButton, MatMiniFabButton } from '@angular/material/button';
+import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { MatList, MatListSubheaderCssMatStyler, MatListItem, MatListItemIcon, MatListItemTitle } from '@angular/material/list';
+import {
+  MatList,
+  MatListItem,
+  MatListItemIcon,
+  MatListItemTitle,
+  MatListSubheaderCssMatStyler,
+} from '@angular/material/list';
+import {
+  MatDrawer,
+  MatDrawerContainer,
+  MatDrawerContent,
+} from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { Feature } from '../shared-model/feature';
 
 @Component({
-    selector: 'app-shared-ui',
-    templateUrl: './shared-ui.component.html',
-    styleUrls: ['./shared-ui.component.scss'],
-    standalone: true,
-    imports: [
-        MatDrawerContainer,
-        MatDrawer,
-        MatList,
-        MatListSubheaderCssMatStyler,
-        MatListItem,
-        MatIcon,
-        MatListItemIcon,
-        MatListItemTitle,
-        MatButton,
-        MatMiniFabButton,
-        MatDrawerContent,
-        NgTemplateOutlet,
-    ],
+  selector: 'app-shared-ui',
+  templateUrl: './shared-ui.component.html',
+  styleUrls: ['./shared-ui.component.scss'],
+  standalone: true,
+  imports: [
+    MatDrawerContainer,
+    MatDrawer,
+    MatList,
+    MatListSubheaderCssMatStyler,
+    MatListItem,
+    MatIcon,
+    MatListItemIcon,
+    MatListItemTitle,
+    MatButton,
+    MatDrawerContent,
+    MatToolbarModule,
+  ],
 })
 export class SharedUiComponent implements OnInit {
   @Output()
