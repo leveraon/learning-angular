@@ -29,6 +29,7 @@
     "learning-angular": "file:",
     "marked": "^15.0.0",
     "moment": "^2.30.1",
+    "ngx-echarts": "^19.0.0",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "sanitize-html": "^2.13.1",
