@@ -70,13 +70,6 @@ const routes: Routes = [
         (m) => m.MarkedComponent
       ),
   },
-  {
-    path: 'apex-chart',
-    loadComponent: () =>
-      import('./examples/apex-charts/apex-charts.component').then(
-        (m) => m.ApexChartsComponent
-      ),
-  },
 ];
 
 @NgModule({
