@@ -70,6 +70,13 @@ const routes: Routes = [
         (m) => m.MarkedComponent
       ),
   },
+  {
+    path: 'echarts',
+    loadComponent: () =>
+      import('./examples/echarts/echarts.component').then(
+        (m) => m.EchartsComponent
+      ),
+  },
 ];
 
 @NgModule({
