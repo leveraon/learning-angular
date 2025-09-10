@@ -12,7 +12,7 @@ import {
 @Component({
   selector: 'app-markdown-toolbar',
   templateUrl: './markdown-toolbar.component.html',
-  styleUrls: ['./markdown-toolbar.component.css'],
+  styleUrls: ['./markdown-toolbar.component.scss'],
   standalone: true,
 })
 export class MarkdownToolbarComponent implements AfterViewInit, OnDestroy {
